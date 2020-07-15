@@ -1,9 +1,10 @@
 import React from 'react';
 
-function Topic() {
+function Topic({match}) {
+    console.log(match)
     return (
         <div>
-
+            <p>{match.params.id}</p>
         </div>
     );
 }
