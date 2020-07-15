@@ -1,18 +1,19 @@
 import React from 'react';
 import './App.css';
 
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Home from './components/Home';
+import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import Topics from './components/Topics';
 
 
 function App() {
   return (
-    <Router>
       <div className="">
-        <h1 style={{textAlign: 'center'}}>Routing Kata</h1>
-        <Home />
+        <Router>
+          <Route path="/" exact component={Home} />
+          <Route path="/topics" component={Topics} />
+        </Router>
       </div>
-    </Router>
   );
 }
 

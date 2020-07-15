@@ -5,13 +5,12 @@ function Home() {
     return (
         <div>
             <h1>Homie</h1>
-            <Link>
+            <Link to="/home" >
               <li>Home</li>
             </Link>
-            <Link>
+            <Link to="/topics" >
               <li>Topics</li>
-            </Link>
-            
+            </Link>        
         </div>
     );
 }
